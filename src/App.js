@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import "./styles/main.scss";
+import './styles/main.scss';
+import './styles/fonts.css';
 
-import thumb from './images/thumb_image.png';
+import Switches from './routes/Switches';
 
 const App = () => (
-    <div className="default">
-        <div className="title">
-            Template
-        </div>
+    <div className='default'>
 
-        <div className="image">
-            <img src={thumb} alt="default-image" />
+        <div className='main-body'>
+            <Router>
+                <Switches />
+            </Router>
         </div>
-
     </div>
 );
 
-export default App;
+export default App; 

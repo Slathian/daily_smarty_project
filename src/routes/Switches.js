@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 // page import list
 
-
+import Home from '../pages/home'
 
 // ``````````````````````````````````````````````````````````````
 
