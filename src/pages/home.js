@@ -1,23 +1,19 @@
 import React from 'react';
 
 import Logo from '../components/logo';
+import SearchBar from '../components/search-bar';
+import RecentPosts from '../components/recent-posts';
 
 const Home = () => {
     return (
         <div className='home-wrapper'>
-            <div className="logo-main">
-                <Logo height={"105px"}/>
-            </div>
-            <div className="search-bar-main">
-            <input type="Search DailySmarty" name="daily-smarty-searchbar" id="homepage-input" />
-            </div>
-            <div className="recent-posts-main">
-                <ul>
-                    <li>post</li>
-                    <li>post</li>
-                    <li>post</li>
-                </ul>
-            </div>
+            
+            <Logo height={"105px"}/>
+
+            <SearchBar />
+
+            <RecentPosts />
+            
         </div>
     )
 };
